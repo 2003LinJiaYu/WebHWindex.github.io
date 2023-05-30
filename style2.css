@@ -1,0 +1,175 @@
+  /* 將所有內容的字體設定為 sans-serif */
+  body {
+    font-family: sans-serif;
+    background: linear-gradient(to bottom , #b6cbf1, #80a5e5 , #5381bc, #2f41a5); 
+  }
+  
+  /* 頁面上方標題的樣式 */
+  header {
+    height: 100px;
+    background-color: #fcfcff;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }
+
+  main {
+    width: 100%; /* 預設寬度為100% */
+    margin-left: auto; /* 左邊界置中 */
+    margin-right: auto; /* 右邊界置中 */
+  }
+  
+  @media (min-width: 576px) {
+    /* 螢幕寬度大於或等於576px時的樣式 */
+    main {
+      max-width: 800px; /* 最大寬度為800px */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* 螢幕寬度大於或等於768px時的樣式 */
+    main {
+      max-width: 960px; /* 最大寬度為960px */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    /* 螢幕寬度大於或等於992px時的樣式 */
+    main {
+      max-width: 1200px; /* 最大寬度為1200px */
+    }
+  }  
+
+  .logo {
+    display: flex; /* 使用 Flexbox 佈局 */
+    align-items: center; /* 垂直居中對齊元素 */
+  }
+/*   
+  @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+  body{
+    font-family: 'Noto Sans TC', sans-serif;/* 使用酷酷字體，請將 "Font Name" 替換為實際的字體名稱 
+  } */
+  .logo h1 {
+    margin-left: 10px; /* 調整圖示和標題文字之間的間距 */
+  }
+  
+  .left {
+    float: left; /* 將圖示向左浮動 */
+  }
+  
+  /* 導覽列的樣式 */
+  nav {
+    background-color: #d4def6;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px;    
+  }
+  
+  /* 導覽列中的連結樣式 */
+  nav a {
+    display: block;
+    color: #333;
+    padding: 0.5em;
+    text-decoration: none;
+    float: left;
+  }
+  
+  /* 在連結上滑鼠移入時的樣式 */
+  nav a:hover {
+    background-color: #dddddd;
+  }
+  
+  /* 側欄的樣式 */
+  aside {
+    background-color: #f2f2f2;
+    padding: 1em;
+    width: 30%;
+    float: left;
+  }
+  
+  /* 主要內容區域的樣式 */
+  section {
+    padding: 1em;
+    margin-left: 11%;
+    width: 68%;
+  }
+
+  /* 底部的樣式 */
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #060c3f;
+    color: #b5c9f7;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+  }
+
+/* 將 .carousel-item {}限制在haeder footer裡
+.site-header .carousel-item,
+.site-footer .carousel-item {
+
+  /* 限制圖片位置 
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* 設定一個固定的高度     
+  }
+  .carousel-item img {
+    /* max-height: calc(80vh - 80px); 
+    max-width: 500px;
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+  }  
+} 
+*/
+
+.slider-container {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+}
+
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider-controls button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.carousel-item img {
+  width: 551px; /* 圖片寬度 */
+  height: auto; /* 圖片高度 */
+  object-fit: cover; /* 圖片裁剪方式 */
+  
+}
